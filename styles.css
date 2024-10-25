@@ -1,9 +1,19 @@
 body {
     background-color: pink;
+    color: rosybrown;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 160%;
 }
 h1 {
-    color: magenta;
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
 }
 p {
-    color: springgreen;
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+    border: 2px solid powderblue;
+    padding: 30px;
+    margin: 50px;
 }
