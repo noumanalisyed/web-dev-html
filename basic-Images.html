@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* This style sets the width of all images to 100%: */
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+HTML Images
+
+Images can improve the design and the appearance of a web page.
+
+<h2>HTML Image</h2>
+<img src="assets/pic_trulli.jpg" alt="Trulli" width="500" height="333">
+
+<h2>HTML Image</h2>
+<img src="assets/img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+
+<h2>HTML Image</h2>
+<img src="assets/img_chania.jpg" alt="Flowers in Chania" width="460" height="345">
+
+HTML Images Syntax
+The HTML <img> tag is used to embed an image in a web page.
+
+Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.
+
+The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+
+The <img> tag has two required attributes:
+
+src - Specifies the path to the image
+alt - Specifies an alternate text for the image
+<!--- Syntax <img src="url" alt="alternatetext"> -->
+
+The src Attribute
+The required src attribute specifies the path (URL) to the image.
+
+Note: When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the alt text are shown if the browser cannot find the image.
+
+The alt Attribute
+The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+
+The value of the alt attribute should describe the image:
+
+
+<p>If a browser cannot find the image, it will display the alternate text:</p>
+
+<img src="wrongname.gif" alt="Flowers in Chania">
+Image Size - Width and Height
+You can use the style attribute to specify the width and height of an image.
+
+<p>Here we use the style attribute to specify the width and height of an image:</p>
+
+<img src="assets/img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+
+Alternatively, you can use the width and height attributes:
+
+<h2>Image Size</h2>
+
+<p>Here we specify the width and height of an image with the width and height attributes:</p>
+
+<img src="assets/img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+
+The width and height attributes always define the width and height of the image in pixels.
+
+Note: Always specify the width and height of an image. If width and height are not specified, the web page might flicker while the image loads.
+
+Width and Height, or Style?
+The width, height, and style attributes are all valid in HTML.
+
+However, we suggest using the style attribute. It prevents styles sheets from changing the size of images:
+<h2>Width/Height Attributes or Style?</h2>
+
+<p>The first image uses the width attribute (set to 128 pixels), but the style in the head section overrides it, and sets the width to 100%.</p>
+
+<img src="assets/html5.gif" alt="HTML5 Icon" width="128" height="128">
+
+<p>The second image uses the style attribute to set the width to 128 pixels, this will not be overridden by the style in the head section:</p>
+
+<img src="assets/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+Images in Another Folder
+If you have your images in a sub-folder, you must include the folder name in the src attribute:
+
+Images on Another Server/Website
+Some web sites point to an image on another server.
+
+To point to an image on another server, you must specify an absolute (full) URL in the src attribute:
+
+
+</body>
+</html>
