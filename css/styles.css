@@ -9,6 +9,11 @@ h1 {
     font-family: verdana;
     font-size: 300%;
 }
+h6 {
+    color: brown;
+    font-family: "Apple Chancery";
+    font-size: 200%;
+}
 p {
     color: red;
     font-family: courier;
