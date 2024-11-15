@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th {
+            text-align: left;
+        }
+        </style>
+</head>
+<body>
+<h1>HTML Table Headers</h1>
+
+HTML tables can have headers for each column or row, or for many columns/rows.
+<h2>Table Headers</h2>
+
+<p>Use the TH element to define table headers.</p>
+
+<table style="width:100%">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+</table>
+
+<h2>Vertical Table Headers</h2>
+<p>
+    To use the first column as table headers, define the first cell in each row as a <p> element:
+</p>
+
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <td>Jill</td>
+            <td>Eve</td>
+        </tr>
+        <tr>
+            <th>Lastname</th>
+            <td>Smith</td>
+            <td>Jackson</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>94</td>
+            <td>50</td>
+        </tr>
+    </table>
+
+Align Table Headers
+By default, table headers are bold and centered:
+
+<h2>Left-align Headers</h2>
+
+<p>To left-align the table headers, use the CSS text-align property.</p>
+
+<table style="width:100%">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+</table>
+<h2>
+    Header for Multiple Columns
+</h2>
+
+You can have a header that spans over two or more columns.
+<table>
+    <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+</table>
+</body>
+</html>

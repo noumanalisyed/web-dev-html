@@ -22,3 +22,28 @@ p {
     padding: 30px;
     margin: 50px;
 }
+
+table {
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: 50%;
+    border-radius: 15px;
+    border-style: dotted;
+}
+th{
+    border: 1px solid white;
+    background-color: #96D4D4;
+    border-collapse: collapse;
+    border-radius: 10px;
+    border-style: dotted;
+    border-color: #9697d4;
+}
+td{
+    border: 1px solid white;
+    background-color: #96D4D4;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 10px;
+    border-style: dashed;
+    border-color: #9697d4;
+}
